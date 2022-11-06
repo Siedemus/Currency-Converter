@@ -1,3 +1,5 @@
+console.log("Currency converter script has been successfully activated")
+
 let form = document.querySelector(".js-form");
 let selectElement = document.querySelector(".js-select");
 let fieldElement = document.querySelector(".js-field");
