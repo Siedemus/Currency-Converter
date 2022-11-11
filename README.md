@@ -3,7 +3,7 @@
 ## About project
 **The Currency Converter** is my homework after *module 4*. 
 
-Demo: [click here!](https://siedemus.github.io/currency-converter/)
+Demo: [click here!](https://siedemus.github.io/Currency-Converter/)
 
 ## Currencies
 In my converter you can convert PLN to:
