@@ -1,35 +1,45 @@
-console.log("Currency converter script has been successfully activated")
+{
+    const welcome = () => {
+        console.log("Currency converter script has been successfully activated");
+    };
 
-let form = document.querySelector(".js-form");
-let selectElement = document.querySelector(".js-select");
-let fieldElement = document.querySelector(".js-field");
-let result = document.querySelector(".js-result");
+    const init = () => {
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
 
-let USD = 0.21245696;
-let EUR = 0.21287202;
-let GPB = 0.18693312;
-let CHF = 0.21159223;
+            const selectElement = document.querySelector(".js-select");
+            const fieldElement = document.querySelector(".js-field");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+            const select = selectElement.value;
+            const field = +fieldElement.value;
+            let result = calculateResult(select, field);
+            changeResultText(result, field, select);
+        });
+        welcome();
+    };
 
-    let select = selectElement.value;
-    let field = +fieldElement.value;
-    let operation;
-
-    switch(select) {
-        case "USD":
-            operation = field * USD;
-            break;
-        case "GPB":
-            operation = field * GPB;
-            break;
-        case "EUR":
-            operation = field * EUR
-            break;
-        case "CHF":
-            operation = field * CHF
-            break;
+    const changeResultText = (result, field, select) => {
+        let resultElement = document.querySelector(".js-result");
+        resultElement.innerText = `💸${field}PLN = ${result.toFixed(2)}${select}💸`
     }
-    result.innerText = `💸${field}PLN = ${operation.toFixed(2)}${select}💸`
-})
+
+    const calculateResult = (select, field) => {
+        const USD = 0.21245696;
+        const EUR = 0.21287202;
+        const GPB = 0.18693312;
+        const CHF = 0.21159223;
+
+        switch (select) {
+            case "USD":
+                return field * USD;
+            case "GPB":
+                return field * GPB;
+            case "EUR":
+                return field * EUR;
+            case "CHF":
+                return field * CHF;
+        };
+    };
+    init();
+}
