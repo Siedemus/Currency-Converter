@@ -53,3 +53,10 @@ Here, we have JS variables which contains prices of currencies
 
 - More currencies
 - Variable currencies
+
+## Technologies I used
+
+- HTML
+- CSS
+- JavaScript
+- BEM
