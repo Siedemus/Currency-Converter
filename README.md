@@ -1,8 +1,10 @@
 # Currency Converter
 
+![websiteBanner](images/ogcalc.png)
+
 ## About project
 
-Currency-Converter is a simple calculator to convert currencies.
+Currency-Converter is a simple calculator to convert currencies with fixed values.
 
 Demo: [click here!](https://siedemus.github.io/Currency-Converter/)
 
@@ -47,6 +49,7 @@ Here, we have JS variables which contains prices of currencies
 
 `let CHF = 0.21159223;`
 
-<img src="https://media0.giphy.com/media/xTiIzJSKB4l7xTouE8/giphy.gif?cid=ecf05e4788a9ztcufvn94p6auwb19paraw5e160f3gy1oudj&rid=giphy.gif&ct=g" width="400px">
+## Soon
 
-    
+- More currencies
+- Variable currencies
