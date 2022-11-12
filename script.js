@@ -3,22 +3,6 @@
         console.log("Currency converter script has been successfully activated");
     };
 
-    const init = () => {
-        const form = document.querySelector(".js-form");
-        form.addEventListener("submit", (event) => {
-            event.preventDefault();
-
-            const selectElement = document.querySelector(".js-select");
-            const fieldElement = document.querySelector(".js-field");
-
-            const select = selectElement.value;
-            const field = +fieldElement.value;
-            let result = calculateResult(select, field);
-            changeResultText(result, field, select);
-        });
-        welcome();
-    };
-
     const changeResultText = (result, field, select) => {
         let resultElement = document.querySelector(".js-result");
         resultElement.innerText = `💸${field}PLN = ${result.toFixed(2)}${select}💸`
@@ -41,5 +25,22 @@
                 return field * CHF;
         };
     };
+    
+    const init = () => {
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const selectElement = document.querySelector(".js-select");
+            const fieldElement = document.querySelector(".js-field");
+
+            const select = selectElement.value;
+            const field = +fieldElement.value;
+            let result = calculateResult(select, field);
+            changeResultText(result, field, select);
+        });
+        welcome();
+    };
+
     init();
 }
