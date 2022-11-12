@@ -20,23 +20,21 @@ Each currency has been taken from [xe.com](https://www.xe.com/)
 
 ## Some code
 
-This script convert PLN to currency set by user
+This function convert PLN to currency set by user
 
 ```
-    switch(select) {
-        case "USD":
-            operation = field * USD;
-            break;
-        case "GPB":
-            operation = field * GPB;
-            break;
-        case "EUR":
-            operation = field * EUR
-            break;
-        case "CHF":
-            operation = field * CHF
-            break;
-    }
+    const calculateResult = (select, field) => {
+        switch (select) {
+            case "USD":
+                return field * USD;
+            case "GPB":
+                return field * GPB;
+            case "EUR":
+                return field * EUR;
+            case "CHF":
+                return field * CHF;
+        };
+    };
 ```
 Here, we have JS variables which contains prices of currencies
 
