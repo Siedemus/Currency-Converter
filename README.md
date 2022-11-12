@@ -14,9 +14,9 @@ In my converter you can convert PLN to:
 
 Each currency has been taken from [xe.com](https://www.xe.com/)
 
-## No context cat
+## How it works
 
-![cuteCat](https://freeimghost.net/images/2022/11/05/profilowec42613aecafa3cc0.png)
+![gif](images/Animation.gif)
 
 ## Some code
 
