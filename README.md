@@ -60,3 +60,4 @@ Here, we have JS variables which contains prices of currencies
 - CSS
 - JavaScript
 - BEM
+- Normalise.css
